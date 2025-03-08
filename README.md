@@ -1,55 +1,61 @@
-# React + TypeScript + Vite
+## Sobre mí
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Soy [Tu Nombre], desarrollador web con experiencia en [Tecnologías/Habilidades]. Puedes encontrarme en:
 
-Currently, two official plugins are available:
+* [LinkedIn](https://www.linkedin.com/in/jendevelopez)
+* [GitHub](https://github.com/jenDevelopez)
+* [Tu Web Personal](https://www.jendevelopez.es)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Proyectos
 
-## Expanding the ESLint configuration
+| Proyecto | Descripción | Tecnologías | Enlace |
+|---|---|---|---|
+| Star Wars Starships | Pagina de naves de Star Wars, con su informacion, pilotos y películas en la que aparecen | React, Firebase, Zustand, Tailwind | [Demo](https://github.com/jenDevelopez/star-wars/) |
+| Lleo XIII | Página de la escuela Lleo XIII en Barcelona | HTML, CSS, JavaScript, Jquery, Wordpress, PHP, Ajax | [Demo](https://lleoxiii.com/) |
+| Pinturas Fepama | Página de Fepama, empresa de pinturas | HTML, CSS, JavaScript, Jquery, Wordpress, PHP, Ajax  | [Demo](https://pinturasfepama.es/) |
+| Grupo Alvera | Página de Grupo Alvera, empresa dedicada a produccion de eventos | HTML, CSS, JavaScript, Jquery, Wordpress, PHP, Ajax  | [Demo](https://grupoalvera.com/) |
+| Cris la pintora | Página de Cris la Pintora, empresa dedicada a servicios de pintura y rehabilitacion de muebles | HTML, CSS, JavaScript, Jquery, Wordpress, PHP, Ajax  | [Demo](https://crislapintora.com/) |
+| Adrià Gilibets | Página de Adrià gilibets, empresa dedicada a servicios de pintura y reformas | HTML, CSS, JavaScript, Jquery, Wordpress, PHP, Ajax  | [Demo](https://adriagilibets.com/) |
+| Gualoga | Página de Gualoga, empresa dedicada al montaje de stands | HTML, CSS, JavaScript, Wordpress, PHP  | [Demo](https://gualoga.com/) |
+| Poseidrone | Página de Poseidrone, empresa dedicada a la grabacion con drones | HTML, CSS, JavaScript, Jquery, Wordpress, PHP, Ajax  | [Demo](https://pinturasfepama.es/) |
+| Next crud | Aplicacion hecha en Nextjs, de CRUD de notas | HTML, Tailwind, JavaScript, Next, Prisma, Vercel  | [Repositorio](https://github.com/jenDevelopez/crud-nextjs-prisma) |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tecnologías que domino o en proceso
+* **Frontend**
+  * HTML5
+  * CSS3
+  * JavaScript (ES6+)
+  * Typescript
+  * React
+  * Node.js
+  * Git
+  * Astro 
+  * Next.js 
+  * Bootstrap 
+  * Tailwind 
+  * jQuery
+* **Backend**
+  * Node.js 
+  * Express 
+  * PHP
+  * MySQL
+  * C#
+  * Wordpress
+* **Devops**
+  * Git
+  * GitHub
+  * Linux
+  * Plesk 
+  * VirtualBox
+  * Docker
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# portafolio_react
+## Tecnologías utilizadas en este portafolio
+
+* HTML5
+* CSS3 (tailwind)
+* JavaScript (ES6+)
+* React.js
+* Git
