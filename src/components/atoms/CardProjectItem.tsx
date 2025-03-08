@@ -9,7 +9,7 @@ function CardProject({ title, description, link, github, image, tags, className 
     <article className={`z-10 w-full mx-auto h-full bg-cover ${className} relative group border-2 border-gray-400 rounded-lg `} >
     <div className="w-full h-full  absolute top-0  group-active:opacity-50
     md:group-hover:opacity-50 " >
-      <img className='object-cover ' src={img} alt={`captura de pantalla del proyecto ${title}`} />
+      <img className='object-cover object-top h-full rounded-xl border border-gray-100' src={img} alt={`captura de pantalla del proyecto ${title}`} />
     </div>
     <div className=" w-full h-full opacity-0 
      absolute top-0 flex flex-col justify-center gap-4 p-4 
