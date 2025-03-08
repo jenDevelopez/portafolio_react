@@ -23,34 +23,21 @@ Soy [Tu Nombre], desarrollador web con experiencia en [Tecnologías/Habilidades]
 
 
 ## Tecnologías que domino o en proceso
-* **Frontend**
-  * HTML5
-  * CSS3
-  * JavaScript (ES6+)
-  * Typescript
-  * React
-  * Node.js
-  * Git
-  * Astro 
-  * Next.js 
-  * Bootstrap 
-  * Tailwind 
-  * jQuery
-* **Backend**
-  * Node.js 
-  * Express 
-  * PHP
-  * MySQL
-  * C#
-  * Wordpress
-* **Devops**
-  * Git
-  * GitHub
-  * Linux
-  * Plesk 
-  * VirtualBox
-  * Docker
 
+| Frontend          | Backend         | DevOps          |
+|-------------------|-----------------|-----------------|
+| * HTML5           | * Node.js       | * Git           |
+| * CSS3            | * Express       | * GitHub        |
+| * JavaScript (ES6+) | * PHP           | * Linux         |
+| * TypeScript      | * MySQL         | * Plesk         |
+| * React           | * C#            | * VirtualBox    |
+| * Node.js         | * WordPress     | * Docker        |
+| * Git             |                 |                 |
+| * Astro           |                 |                 |
+| * Next.js          |                 |                 |
+| * Bootstrap       |                 |                 |
+| * Tailwind        |                 |                 |
+| * jQuery          |                 |                 |
 
 ## Tecnologías utilizadas en este portafolio
 
