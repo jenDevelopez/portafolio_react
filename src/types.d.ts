@@ -9,12 +9,16 @@ export interface Tag{
   class:string,
   icon:JSX.Element
 }
+interface PropCardImg {
+  desktop:string,
+  mobile:string
+}
 export interface PropsCardProject {
   title:string,
   description:string,
   link?:string,
   github?:string,
-  image:string, 
+  image:PropCardImg, 
   className:string, 
   key:string,
   tags:Tag[],
