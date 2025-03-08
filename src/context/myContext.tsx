@@ -2,10 +2,12 @@ import React, { Dispatch, SetStateAction, createContext, useState } from "react"
 interface StateContextType {
   content:string,
   openNav:boolean,
-  setContent: Dispatch<SetStateAction<string>>
-  setOpenNav: Dispatch<SetStateAction<boolean>>
+  viewProjectInfo:boolean,
+  setContent: Dispatch<SetStateAction<string>>,
+  setOpenNav: Dispatch<SetStateAction<boolean>>,
   isSending:boolean,
-  setIsSending: Dispatch<SetStateAction<boolean>>
+  setIsSending: Dispatch<SetStateAction<boolean>>,
+  setViewProjectInfo:Dispatch<SetStateAction<boolean>>,
 }
 
 interface ProviderProps {
@@ -19,7 +21,9 @@ export const MyContext = createContext<StateContextType>({
   setOpenNav:()=>{}
   ,
   isSending:false,
-  setIsSending:()=>{}
+  setIsSending:()=>{},
+  viewProjectInfo:false,
+  setViewProjectInfo: () => {}
   
 
 });
@@ -27,13 +31,16 @@ export const MyContext = createContext<StateContextType>({
 export const MyProvider = ({ children }: ProviderProps) => {
   const [content,setContent] = useState('about')
   const [openNav,setOpenNav] = useState(false)
+  const [viewProjectInfo,setViewProjectInfo] = useState(false)
   return (
     <MyContext.Provider
       value={{
         content,setContent,
         openNav,setOpenNav,
+        viewProjectInfo,setViewProjectInfo,
         isSending:false,
-        setIsSending:()=>{}
+        setIsSending:()=>{},
+        
 
       }}
     >

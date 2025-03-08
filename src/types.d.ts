@@ -62,6 +62,7 @@ export interface FormDataProps {
 export interface PropsSection {
   children:JSX.Element | JSX.Element[];
   title:string;
+  class?:string;
 }
 
 interface CarruselProps {

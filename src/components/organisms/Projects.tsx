@@ -10,6 +10,8 @@ import { SiJquery } from "react-icons/si";
 import Section from "../molecules/Section";
 import Carousel from "../atoms/Carousel";
 import { type Tag, PropsCardProject } from "../../types";
+import useMyContext from "../../hooks/useMyContext";
+
 
 function Projects() {
   const TAGS: { [key: string]: Tag } = {
@@ -131,7 +133,7 @@ function Projects() {
         TAGS.JQUERY,
         TAGS.PHP,
       ],
-      className: "text-black left-0",
+      className: "text-white left-0",
       backgroundImage: "",
       key: "prj4",
     },
@@ -152,7 +154,7 @@ function Projects() {
         TAGS.JQUERY,
         TAGS.PHP,
       ],
-      className: "text-black left-0",
+      className: "text-white left-0",
       backgroundImage: "",
       key: "prj5",
     },
@@ -173,7 +175,7 @@ function Projects() {
         TAGS.JQUERY,
         TAGS.PHP,
       ],
-      className: "text-black left-0",
+      className: "text-white left-0",
       backgroundImage: "",
       key: "prj6",
     },
@@ -194,7 +196,7 @@ function Projects() {
         TAGS.JQUERY,
         TAGS.PHP,
       ],
-      className: "text-black left-0",
+      className: "text-white left-0",
       backgroundImage: "",
       key: "prj7",
     },
@@ -214,7 +216,7 @@ function Projects() {
         TAGS.JQUERY,
         TAGS.PHP,
       ],
-      className: "text-black left-0",
+      className: "text-white left-0",
       backgroundImage: "",
       key: "prj7",
     },
@@ -235,7 +237,7 @@ function Projects() {
         TAGS.JQUERY,
         TAGS.PHP,
       ],
-      className: "text-black left-0",
+      className: "text-white left-0",
       backgroundImage: "",
       key: "prj7",
     },
@@ -262,7 +264,7 @@ function Projects() {
       github: "https://github.com/jenDevelopez/javascript-quizz.git",
       link: 'quizz-javascript-app.netlify.app',
       tags: [TAGS.HTML, TAGS.TAILWIND, TAGS.JAVSCRIPT, TAGS.ZUSTAND],
-      className: "text-black left-0",
+      className: "text-white left-0",
       backgroundImage: "",
       key: "prj9",
     },{
@@ -275,15 +277,19 @@ function Projects() {
       github: "https://github.com/jenDevelopez/pokedex.git",
       link: 'pokedex-develop.netlify.app',
       tags: [TAGS.HTML, TAGS.CSS, TAGS.TYPESCRIPT, TAGS.ZUSTAND],
-      className: "text-black left-0",
+      className: "text-white left-0",
       backgroundImage: "",
       key: "prj10",
     },
   ];
 
+  const {setViewProjectInfo} = useMyContext();
+ 
+ 
   return (
-    <Section title="Proyectos">
+    <Section title="Proyectos" class="relative">
       <Carousel listProjects={proyectos} />
+      <button onClick={() => setViewProjectInfo(true)} className='bg-blue-500 text-white rounded-3xl px-4 py-1 absolute -bottom-12 left-1/2 -translate-x-12'>Ver info</button>
     </Section>
   );
 }

@@ -1,20 +1,29 @@
 import { FaLink,FaGithub } from 'react-icons/fa6'
 import { PropsCardProject } from '../../types';
+import { IoCloseSharp } from "react-icons/io5";
+
+import useMyContext from '../../hooks/useMyContext';
 
 
 function CardProject({ title, description, link, github, image, tags, className }: PropsCardProject) {
   const device = window.innerWidth;
   const img = device > 768 ? image.desktop : image.mobile;
+  const {viewProjectInfo,setViewProjectInfo} = useMyContext()
   return (
-    <article className={`z-10 w-full mx-auto h-full bg-cover ${className} relative group border-2 border-gray-400 rounded-lg `} >
-    <div className="w-full h-full  absolute top-0  group-active:opacity-50
-    md:group-hover:opacity-50 " >
-      <img className='object-cover object-top h-full rounded-xl border border-gray-100' src={img} alt={`captura de pantalla del proyecto ${title}`} />
+    
+    
+    <article onClick={() => setViewProjectInfo(false)} className={`z-10 w-full mx-auto h-full bg-cover ${className} relative group  rounded-lg `} >
+      
+    <div className={`w-full h-full  absolute top-0  ${viewProjectInfo && 'opacity-75'}
+    `} >
+      <img className='object-cover object-top h-full rounded-lg' src={img} alt={`captura de pantalla del proyecto ${title}`} />
     </div>
-    <div className=" w-full h-full opacity-0 
+    <div className={`w-full h-full opacity-0 bg-zinc-400
      absolute top-0 flex flex-col justify-center gap-4 p-4 
-     active:opacity-100 active:z-10
-     md:hover:opacity-100 md:hover:z-10">
+      ${viewProjectInfo && 'opacity-90 z-10'}
+    
+     `} >
+      <span className='absolute top-4 right-6'><IoCloseSharp size={20}/></span>
       <h2 className="font-bold text-lg">{title}</h2>
       <p>{description}</p>
       <ul className="w-10/12 flex flex-wrap justify-start gap-2 my-1">
@@ -43,6 +52,8 @@ function CardProject({ title, description, link, github, image, tags, className 
       </div>
     </div>
   </article>
+  
+    
   );
 
 }
