@@ -3,10 +3,18 @@ import { PropsCardProject } from '../../types';
 
 
 function CardProject({ title, description, link, github, image, tags, className }: PropsCardProject) {
+  const device = window.innerWidth;
+  const img = device > 768 ? image.desktop : image.mobile;
   return (
     <article className={`z-10 w-full mx-auto h-full bg-cover ${className} relative group border-2 border-gray-400 rounded-lg `} >
-    <div className="w-full h-full bg-cover bg-no-repeat aspect-video bg-center absolute top-0 group-hover:opacity-50 " style={{backgroundImage:`url(${image})`}}></div>
-    <div className=" w-full h-full  opacity-0 hover:opacity-100 p-4 hover:z-10 absolute top-0 flex flex-col justify-center gap-4 ">
+    <div className="w-full h-full  absolute top-0  group-active:opacity-50
+    md:group-hover:opacity-50 " >
+      <img className='object-cover ' src={img} alt={`captura de pantalla del proyecto ${title}`} />
+    </div>
+    <div className=" w-full h-full opacity-0 
+     absolute top-0 flex flex-col justify-center gap-4 p-4 
+     active:opacity-100 active:z-10
+     md:hover:opacity-100 md:hover:z-10">
       <h2 className="font-bold text-lg">{title}</h2>
       <p>{description}</p>
       <ul className="w-10/12 flex flex-wrap justify-start gap-2 my-1">
